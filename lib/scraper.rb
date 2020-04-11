@@ -20,8 +20,6 @@ class Scraper
           }
          end
         hash
-
-
   end
 
   def self.scrape_profile_page(profile_url)
@@ -49,10 +47,3 @@ class Scraper
   end
 
 end
-
-#https://learn-co-curriculum.github.io/student-scraper-test-page/students/sean-liu.html
-#binding.pry
-#https://learn-co-curriculum.github.io/student-scraper-test-page/students/ryan-johnson.html
-#https://learn-co-curriculum.github.io/student-scraper-test-page/students/eric-an.html
-#html="https://learn-co-curriculum.github.io/student-scraper-test-page/"
-#binding.pry
