@@ -12,12 +12,13 @@ class Scraper
         #res= studentpage.css("body > div > div > div.roster-cards-container")
         res= studentpage.css(".student-card")
          #binding.pry
-         hash = res.map do |i|
+         hash = res.collect do |i|
           {
               name: i.css("h4").text ,
               location: i.css("p").text ,
               profile_url: i.css('a').attribute('href').value
           }
+          #binding.pry
          end
         hash
   end
